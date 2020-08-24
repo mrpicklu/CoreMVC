@@ -19,17 +19,23 @@ namespace BulkyBook.DataAccess.Repository
             SP_Call = new SP_Call(_db);
             coverType = new CoverTypeRepository(_db);
             Product = new ProductRepository(_db);
+            Comapany = new CompanyRepository(_db);
+            ApplicationUser = new ApplicationUserRepository(_db);
         }
 
         
         public ISP_Call SP_Call { get; private set; }
 
-        public ICategoryRepository Catagory { get; private set; }
+        public ICompanyRepository Catagory { get; private set; }
        
 
         public ICoverTypeRepository coverType { get; private set; }
 
         public IProductRepository Product { get; private set; }
+
+        public IComapanyRepository Comapany { get; private set; }
+
+        public IApplicationUserRepository ApplicationUser { get; private set; }
 
         public void Dispose()
         {

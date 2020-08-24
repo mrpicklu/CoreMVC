@@ -5,8 +5,8 @@ using System.Text;
 
 namespace BulkyBook.DataAccess.Repository.IRepository
 {
-    public interface ICompanyRepository : IRepository<Category>
+    public interface IApplicationUserRepository : IRepository<ApplicationUser>
     {
-        void Update(Category category);
+        //void Update(ApplicationUser applicationUser);
     }
 }

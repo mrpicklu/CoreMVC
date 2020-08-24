@@ -5,6 +5,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Migrations\20200824142709_AddUserPropertyToDb.cs" />
+    <Compile Remove="Migrations\20200824142709_AddUserPropertyToDb.Designer.cs" />
+    <Compile Remove="Migrations\20200824142809_AddUserPropertiesToDb.cs" />
+    <Compile Remove="Migrations\20200824142809_AddUserPropertiesToDb.Designer.cs" />
+    <Compile Remove="Migrations\20200824143113_AddUserPropertiesToDb.cs" />
+    <Compile Remove="Migrations\20200824143113_AddUserPropertiesToDb.Designer.cs" />
+    <Compile Remove="Migrations\20200824143549_AddUserPropertiesToDb.cs" />
+    <Compile Remove="Migrations\20200824143549_AddUserPropertiesToDb.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Dapper" Version="2.0.35" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.3" />
     <PackageReference Include="Microsoft.Build.Framework" Version="16.6.0" />

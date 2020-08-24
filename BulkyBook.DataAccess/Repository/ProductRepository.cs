@@ -25,7 +25,7 @@ namespace BulkyBook.DataAccess.Repository
 
             if (objFromDb != null)
             {
-                if(product.ImageUrl!=null)
+                if (product.ImageUrl != null)
                 {
                     objFromDb.ImageUrl = product.ImageUrl;
                 }

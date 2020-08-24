@@ -8,7 +8,7 @@ using System.Text;
 
 namespace BulkyBook.DataAccess.Repository
 {
-    public class CategoryRepository:Repository<Category>,ICategoryRepository
+    public class CategoryRepository:Repository<Category>,ICompanyRepository
     {
         private readonly ApplicationDbContext _db;
 
@@ -21,10 +21,10 @@ namespace BulkyBook.DataAccess.Repository
         {
             var objFromDb = _db.Categories.FirstOrDefault(s => s.Id == category.Id);
             if (objFromDb != null)
-            { 
+            {
                 objFromDb.Name = category.Name;
 
-               
+
             }
         }
     }
