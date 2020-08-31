@@ -169,7 +169,7 @@ namespace BulkyBook.Areas.Customer.Controllers
             _unitOfWork.OrderHeader.Add(ShoppingCartVM.OrderHeader);
             _unitOfWork.Save();
 
-            List<OrderDeatils> orderDeatilsList = new List<OrderDeatils>();
+            
 
             foreach (var item in ShoppingCartVM.ListCart)
             {
